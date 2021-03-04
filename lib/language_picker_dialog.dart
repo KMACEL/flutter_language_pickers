@@ -179,7 +179,9 @@ class SingleChoiceDialogState extends State<LanguagePickerDialog> {
           _filteredLanguages = _allLanguages
               .where((Language language) =>
                   language.name.toLowerCase().startsWith(value.toLowerCase()) ||
-                  language.isoCode.toLowerCase().startsWith(value.toLowerCase()))
+                  language.isoCode
+                      .toLowerCase()
+                      .startsWith(value.toLowerCase()))
               .toList();
         });
       },

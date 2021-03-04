@@ -79,7 +79,8 @@ class LanguagePickerCupertino extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _CupertinoLanguagePickerState createState() => _CupertinoLanguagePickerState();
+  _CupertinoLanguagePickerState createState() =>
+      _CupertinoLanguagePickerState();
 }
 
 class _CupertinoLanguagePickerState extends State<LanguagePickerCupertino> {
